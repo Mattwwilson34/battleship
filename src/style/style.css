@@ -1,0 +1,151 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#homepage-wrapper {
+  height: 200px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#homepage-title {
+  font-size: 56px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+#start-game-btn {
+  font-size: 36;
+  font-weight: bold;
+  height: 50px;
+}
+
+#gameboardsWrapper {
+  display: flex;
+}
+
+.board-wrapper {
+  height: 600px;
+  display: inline-block;
+  margin: 5px;
+}
+
+.board-container {
+  height: 500px;
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.board-square {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(255, 255, 255);
+  border: 0.25px solid rgba(0, 0, 0, 0.8);
+  font-size: 36px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.board-square-player {
+  background-color: rgb(200, 200, 200);
+}
+
+.board-square-hit {
+  background-color: red;
+}
+
+.board-title {
+  text-align: center;
+  font-size: 24px;
+}
+
+#ships-wrapper {
+  margin: 5px;
+  padding: 5px;
+  width: 400px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ship-container {
+  margin: 5px;
+  display: inline-block;
+}
+
+.ship-square {
+  height: 50px;
+  width: 50px;
+  border: 0.5px solid black;
+  background-color: rgb(200, 200, 200);
+}
+
+.ship-hover-target {
+  background-color: red;
+  opacity: 0.5;
+}
+
+.valid-target {
+  background-color: rgb(30, 184, 30);
+}
+.invalid-target {
+  background-color: red;
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 2;
+}
+
+#overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%, -250%);
+  -ms-transform: translate(-50%, -250%);
+}
+#overlay-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  padding: 15px;
+  background-color: rgb(200, 200, 200);
+  border-radius: 10px;
+  outline: none;
+  border-style: none;
+  color: white;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+#overlay-btn:hover {
+  background-color: rgb(12, 156, 12);
+}
