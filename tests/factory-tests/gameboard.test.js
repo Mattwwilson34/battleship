@@ -11,11 +11,6 @@ test('Board factory returns an object with correct values', () => {
 
 test('Board.placeShip() places a ship on the board array at correct coordinates', () => {
   const board = Gameboard();
-  // horizontal testing
-  board.placeShip(0, 0, 'submarine', 3, 'horizontal');
-  expect(board.board[0][0]).toEqual('0,submarine');
-  expect(board.board[0][1]).toEqual('1,submarine');
-  expect(board.board[0][2]).toEqual('2,submarine');
 
   // vertical testing
   board.placeShip(0, 0, 'submarine', 3, 'vertical');
@@ -32,10 +27,10 @@ test('Board.validateMove() compares provided coordinates to board.attackHistory 
 
 test('Board.recieveAttack() - if miss update board coordinates with "miss"', () => {
   const board = Gameboard();
-  board.placeShip(0, 0, 'submarine', 3, 'horizontal');
-  board.receiveAttack(1, 0);
+  board.placeShip(0, 0, 'submarine', 3);
+  board.receiveAttack(0, 1);
   board.receiveAttack(0, 0);
-  const target = board.board[1][0];
+  const target = board.board[0][1];
 
   expect(target).toEqual('miss');
   expect(board.receiveAttack(0, 0)).toBe(false);
