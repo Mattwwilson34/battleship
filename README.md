@@ -5,6 +5,12 @@ This repository contains a browser-based implementation of the classic game of B
 
 ![ezgif com-gif-maker (19)](https://user-images.githubusercontent.com/49503056/215547830-9d590768-5602-41dd-8d9d-dfece9033ebc.gif)
 
+## Technologies used:
+- JavaScript (ES6+)
+- Jest for testing
+- HTML
+- CSS (for user interface)
+
 ## Project Focus
 The main focus of this project was to practice and demonstrate ***object-oriented programming and Test-driven development.***
 
