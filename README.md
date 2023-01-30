@@ -1,11 +1,13 @@
 # Battleship Game
 This repository contains a browser-based implementation of the classic game of Battleship. The project focuses on using object-oriented programming principles and test-driven development.
 
-## Project Focus
-The main focus of this project is to practice and demonstrate:
+[Link to Game](https://mattwwilson34.github.io/battleship/)
 
-### Object-oriented programming using factory functions.
-Test-driven development.
+![ezgif com-gif-maker (19)](https://user-images.githubusercontent.com/49503056/215547830-9d590768-5602-41dd-8d9d-dfece9033ebc.gif)
+
+## Project Focus
+The main focus of this project was to practice and demonstrate ***object-oriented programming and Test-driven development.***
+
 The game consists of multiple objects, such as Ship, Gameboard, and Player, which are all implemented as factory functions. Each object has its own methods and properties that are used to simulate the behavior of the game. The objects interact with each other to make the game work.
 
 For example, the Ship factory function creates objects that have a length property and a hit() method that increases the number of hits the ship has taken. The isSunk() method calculates whether or not the ship has been sunk based on its length and number of hits.
